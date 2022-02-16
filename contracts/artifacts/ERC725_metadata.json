@@ -1,0 +1,338 @@
+{
+	"compiler": {
+		"version": "0.8.9+commit.e5eed63a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "operation",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "contractAddress",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "ContractCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "key",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "value",
+						"type": "bytes"
+					}
+				],
+				"name": "DataChanged",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "operation",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "Executed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_operation",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "execute",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "result",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32[]",
+						"name": "keys",
+						"type": "bytes32[]"
+					}
+				],
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "bytes[]",
+						"name": "values",
+						"type": "bytes[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32[]",
+						"name": "_keys",
+						"type": "bytes32[]"
+					},
+					{
+						"internalType": "bytes[]",
+						"name": "_values",
+						"type": "bytes[]"
+					}
+				],
+				"name": "setData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC725.sol": "ERC725"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC165Storage.sol": {
+			"keccak256": "0x724a5b2bf3c35412af62189d15c52b9c2669e7b6e5d57364d397b061371d2384",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://20ced5e6de80714914e196127ef0d98cda4b0c64c3fdc2f90010872a01ffee5c",
+				"dweb:/ipfs/QmPvhx9hUb7CiwGCdZDB2szTazdPb8JxTiGCCB89Jm6BTM"
+			]
+		},
+		"contracts/ERC173.sol": {
+			"keccak256": "0x0100a27b2a30e3ae0169231429eccaa82f016cc3b03335ced07f0a4056cbac95",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f99c3ae64071f478428809dc93f463c65246ee8c06cef8ad052aa916a2927902",
+				"dweb:/ipfs/QmRyXNWhcHaFCdH3MpMrW3pFfwLjmZsM561qRfcttDobPk"
+			]
+		},
+		"contracts/ERC725.sol": {
+			"keccak256": "0x5b23c01a53d5d9178a14de5ed03e22f884e4a9ebccbf7ce63691f645d8cea5d1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://75c2279f80ecf701ffe144afbb145730048a41e229205377456d6fe48d4d48f9",
+				"dweb:/ipfs/QmSpjk2BiFbUrU7XokdM972XrCoV2pB6VCdQ9o7HVSZPV5"
+			]
+		},
+		"contracts/interfaces/IERC165.sol": {
+			"keccak256": "0x0735385447707e15e1c10e9b51c9ebc52bd9c006e8e1d4bba3aa58aaae7e564e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4b13b51e77cf9dc944a2194fee23d29368ea790303addeeee0d830f13a03a43c",
+				"dweb:/ipfs/Qmds3YW5vEoDmPceT3L7gtsk4SyWd9JNLS5Zt5QnSvF54i"
+			]
+		},
+		"contracts/interfaces/IERC173.sol": {
+			"keccak256": "0x370c27aa7f08a1f8f1a81bbfa16329acb7c9adcafd4d49a489ae849ef3e9af19",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b4dd7893ae610dc13cf4c3f9b127655bb4493c086a3df0f92a4371901483c2fd",
+				"dweb:/ipfs/QmZAFgkREbkD5bqpfCsgFosWyFBmbN7XJSvv7wc43ND5zc"
+			]
+		},
+		"contracts/interfaces/IERC725X.sol": {
+			"keccak256": "0x430741dab6fd20cfa7f6c7dff0508333202b7feaf06b4500930bc46aa0576fbf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://18f90d1cef4be79b00e0e330edbf6f7213666fee8132f857a8d672071bcffe2f",
+				"dweb:/ipfs/QmckN7cXYiHWMYZK1AeFzzBG7gRxNWwvzQg7fhrBWeBTds"
+			]
+		},
+		"contracts/interfaces/IERC725Y.sol": {
+			"keccak256": "0xd6a6537cb08a4eed9d599d6a842840aafa5e5f9d1863d52e8e7adf04bc0bc418",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f01bc3cd73e465816607e503298e59961aa655693ebcfdcdf3e3047b0e31ac15",
+				"dweb:/ipfs/QmNgYgrZXgwriwkAzVvBkmnH3dhfpFCwYpKSKWBZjhYPbt"
+			]
+		},
+		"contracts/utils/BytesAndAddress.sol": {
+			"keccak256": "0x6090c0b0fb41138a138c733e147b73b65fb516953d3e9b59c76d0acc9784a9a7",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://063cd931049488817136322060e1926cc60ab7a365c215fed208582b44e1297e",
+				"dweb:/ipfs/QmSzSXXC7Fistj2yKxXXppkLPiRRGrS9pXiqwWYYDb59Bs"
+			]
+		},
+		"contracts/utils/constant.sol": {
+			"keccak256": "0xcea3bdd7072c5d28e085d2fa1229a573b9767ed10811dbe66798edea626fd8ac",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://23cd484357f781ec4bf7f6bb657e30e3834788b61727e65f079f4bdca0446fa4",
+				"dweb:/ipfs/QmRBnZ6gff71SyEKLkqjjjmDxNcE4Nk72fwYC7gq22phAK"
+			]
+		}
+	},
+	"version": 1
+}

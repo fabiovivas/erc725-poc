@@ -1,0 +1,537 @@
+{
+  "contractName": "IERC173",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IERC173.sol\":\"IERC173\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IERC173.sol\":{\"keccak256\":\"0x370c27aa7f08a1f8f1a81bbfa16329acb7c9adcafd4d49a489ae849ef3e9af19\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b4dd7893ae610dc13cf4c3f9b127655bb4493c086a3df0f92a4371901483c2fd\",\"dweb:/ipfs/QmZAFgkREbkD5bqpfCsgFosWyFBmbN7XJSvv7wc43ND5zc\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\ninterface IERC173 /* is ERC165 */ {\r\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\r\n    function owner() view external returns(address); \r\n    function transferOwnership(address _newOwner) external;\t\r\n}",
+  "sourcePath": "C:\\proj\\blockchain\\identity\\contracts\\interfaces\\IERC173.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IERC173.sol",
+    "exportedSymbols": {
+      "IERC173": [
+        667
+      ]
+    },
+    "id": 668,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 650,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IERC173",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 667,
+        "linearizedBaseContracts": [
+          667
+        ],
+        "name": "IERC173",
+        "nameLocation": "70:7:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "id": 656,
+            "name": "OwnershipTransferred",
+            "nameLocation": "107:20:4",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 655,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 652,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "previousOwner",
+                  "nameLocation": "144:13:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 656,
+                  "src": "128:29:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 651,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "128:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 654,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nameLocation": "175:8:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 656,
+                  "src": "159:24:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 653,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "159:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "127:57:4"
+            },
+            "src": "101:84:4"
+          },
+          {
+            "functionSelector": "8da5cb5b",
+            "id": 661,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nameLocation": "200:5:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 657,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "205:2:4"
+            },
+            "returnParameters": {
+              "id": 660,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 659,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 661,
+                  "src": "230:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 658,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "230:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "229:9:4"
+            },
+            "scope": 667,
+            "src": "191:48:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "f2fde38b",
+            "id": 666,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferOwnership",
+            "nameLocation": "255:17:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 664,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 663,
+                  "mutability": "mutable",
+                  "name": "_newOwner",
+                  "nameLocation": "281:9:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 666,
+                  "src": "273:17:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 662,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "273:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "272:19:4"
+            },
+            "returnParameters": {
+              "id": 665,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "300:0:4"
+            },
+            "scope": 667,
+            "src": "246:55:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 668,
+        "src": "60:245:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:272:4"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/interfaces/IERC173.sol",
+    "exportedSymbols": {
+      "IERC173": [
+        667
+      ]
+    },
+    "id": 668,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 650,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IERC173",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 667,
+        "linearizedBaseContracts": [
+          667
+        ],
+        "name": "IERC173",
+        "nameLocation": "70:7:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "id": 656,
+            "name": "OwnershipTransferred",
+            "nameLocation": "107:20:4",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 655,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 652,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "previousOwner",
+                  "nameLocation": "144:13:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 656,
+                  "src": "128:29:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 651,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "128:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 654,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nameLocation": "175:8:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 656,
+                  "src": "159:24:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 653,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "159:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "127:57:4"
+            },
+            "src": "101:84:4"
+          },
+          {
+            "functionSelector": "8da5cb5b",
+            "id": 661,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nameLocation": "200:5:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 657,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "205:2:4"
+            },
+            "returnParameters": {
+              "id": 660,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 659,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 661,
+                  "src": "230:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 658,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "230:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "229:9:4"
+            },
+            "scope": 667,
+            "src": "191:48:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "f2fde38b",
+            "id": 666,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferOwnership",
+            "nameLocation": "255:17:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 664,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 663,
+                  "mutability": "mutable",
+                  "name": "_newOwner",
+                  "nameLocation": "281:9:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 666,
+                  "src": "273:17:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 662,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "273:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "272:19:4"
+            },
+            "returnParameters": {
+              "id": 665,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "300:0:4"
+            },
+            "scope": 667,
+            "src": "246:55:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 668,
+        "src": "60:245:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:272:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-02-08T06:59:22.140Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

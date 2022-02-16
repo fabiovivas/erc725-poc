@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.8.9+commit.e5eed63a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC173.sol": "ERC173"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC173.sol": {
+			"keccak256": "0x0100a27b2a30e3ae0169231429eccaa82f016cc3b03335ced07f0a4056cbac95",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f99c3ae64071f478428809dc93f463c65246ee8c06cef8ad052aa916a2927902",
+				"dweb:/ipfs/QmRyXNWhcHaFCdH3MpMrW3pFfwLjmZsM561qRfcttDobPk"
+			]
+		},
+		"contracts/interfaces/IERC173.sol": {
+			"keccak256": "0x370c27aa7f08a1f8f1a81bbfa16329acb7c9adcafd4d49a489ae849ef3e9af19",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b4dd7893ae610dc13cf4c3f9b127655bb4493c086a3df0f92a4371901483c2fd",
+				"dweb:/ipfs/QmZAFgkREbkD5bqpfCsgFosWyFBmbN7XJSvv7wc43ND5zc"
+			]
+		}
+	},
+	"version": 1
+}

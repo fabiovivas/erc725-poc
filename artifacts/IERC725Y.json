@@ -1,0 +1,722 @@
+{
+  "contractName": "IERC725Y",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "key",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "value",
+          "type": "bytes"
+        }
+      ],
+      "name": "DataChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32[]",
+          "name": "keys",
+          "type": "bytes32[]"
+        }
+      ],
+      "name": "getData",
+      "outputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "values",
+          "type": "bytes[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32[]",
+          "name": "keys",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "bytes[]",
+          "name": "values",
+          "type": "bytes[]"
+        }
+      ],
+      "name": "setData",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"key\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"value\",\"type\":\"bytes\"}],\"name\":\"DataChanged\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"keys\",\"type\":\"bytes32[]\"}],\"name\":\"getData\",\"outputs\":[{\"internalType\":\"bytes[]\",\"name\":\"values\",\"type\":\"bytes[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"keys\",\"type\":\"bytes32[]\"},{\"internalType\":\"bytes[]\",\"name\":\"values\",\"type\":\"bytes[]\"}],\"name\":\"setData\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IERC725Y.sol\":\"IERC725Y\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IERC725Y.sol\":{\"keccak256\":\"0xd6a6537cb08a4eed9d599d6a842840aafa5e5f9d1863d52e8e7adf04bc0bc418\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f01bc3cd73e465816607e503298e59961aa655693ebcfdcdf3e3047b0e31ac15\",\"dweb:/ipfs/QmNgYgrZXgwriwkAzVvBkmnH3dhfpFCwYpKSKWBZjhYPbt\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\ninterface IERC725Y {    \r\n    event DataChanged(bytes32 indexed key, bytes value);\r\n    function getData(bytes32[] memory keys) external view returns (bytes[] memory values);\r\n    function setData(bytes32[] memory keys, bytes[] memory values) external;\r\n}",
+  "sourcePath": "C:\\proj\\blockchain\\identity\\contracts\\interfaces\\IERC725Y.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IERC725Y.sol",
+    "exportedSymbols": {
+      "IERC725Y": [
+        728
+      ]
+    },
+    "id": 729,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 703,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IERC725Y",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 728,
+        "linearizedBaseContracts": [
+          728
+        ],
+        "name": "IERC725Y",
+        "nameLocation": "70:8:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "id": 709,
+            "name": "DataChanged",
+            "nameLocation": "96:11:6",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 708,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 705,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "key",
+                  "nameLocation": "124:3:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 709,
+                  "src": "108:19:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 704,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "108:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 707,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "135:5:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 709,
+                  "src": "129:11:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 706,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "129:5:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "107:34:6"
+            },
+            "src": "90:52:6"
+          },
+          {
+            "functionSelector": "4e3e6e9c",
+            "id": 718,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getData",
+            "nameLocation": "157:7:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 713,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 712,
+                  "mutability": "mutable",
+                  "name": "keys",
+                  "nameLocation": "182:4:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 718,
+                  "src": "165:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 710,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "165:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 711,
+                    "nodeType": "ArrayTypeName",
+                    "src": "165:9:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "164:23:6"
+            },
+            "returnParameters": {
+              "id": 717,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 716,
+                  "mutability": "mutable",
+                  "name": "values",
+                  "nameLocation": "226:6:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 718,
+                  "src": "211:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "bytes[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 714,
+                      "name": "bytes",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "211:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_storage_ptr",
+                        "typeString": "bytes"
+                      }
+                    },
+                    "id": 715,
+                    "nodeType": "ArrayTypeName",
+                    "src": "211:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes_storage_$dyn_storage_ptr",
+                      "typeString": "bytes[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "210:23:6"
+            },
+            "scope": 728,
+            "src": "148:86:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "14a6e293",
+            "id": 727,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setData",
+            "nameLocation": "249:7:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 725,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 721,
+                  "mutability": "mutable",
+                  "name": "keys",
+                  "nameLocation": "274:4:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 727,
+                  "src": "257:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 719,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "257:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 720,
+                    "nodeType": "ArrayTypeName",
+                    "src": "257:9:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 724,
+                  "mutability": "mutable",
+                  "name": "values",
+                  "nameLocation": "295:6:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 727,
+                  "src": "280:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "bytes[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 722,
+                      "name": "bytes",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "280:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_storage_ptr",
+                        "typeString": "bytes"
+                      }
+                    },
+                    "id": 723,
+                    "nodeType": "ArrayTypeName",
+                    "src": "280:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes_storage_$dyn_storage_ptr",
+                      "typeString": "bytes[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "256:46:6"
+            },
+            "returnParameters": {
+              "id": 726,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "311:0:6"
+            },
+            "scope": 728,
+            "src": "240:72:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 729,
+        "src": "60:255:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:282:6"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/interfaces/IERC725Y.sol",
+    "exportedSymbols": {
+      "IERC725Y": [
+        728
+      ]
+    },
+    "id": 729,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 703,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IERC725Y",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 728,
+        "linearizedBaseContracts": [
+          728
+        ],
+        "name": "IERC725Y",
+        "nameLocation": "70:8:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "id": 709,
+            "name": "DataChanged",
+            "nameLocation": "96:11:6",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 708,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 705,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "key",
+                  "nameLocation": "124:3:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 709,
+                  "src": "108:19:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 704,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "108:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 707,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "135:5:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 709,
+                  "src": "129:11:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 706,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "129:5:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "107:34:6"
+            },
+            "src": "90:52:6"
+          },
+          {
+            "functionSelector": "4e3e6e9c",
+            "id": 718,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getData",
+            "nameLocation": "157:7:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 713,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 712,
+                  "mutability": "mutable",
+                  "name": "keys",
+                  "nameLocation": "182:4:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 718,
+                  "src": "165:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 710,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "165:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 711,
+                    "nodeType": "ArrayTypeName",
+                    "src": "165:9:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "164:23:6"
+            },
+            "returnParameters": {
+              "id": 717,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 716,
+                  "mutability": "mutable",
+                  "name": "values",
+                  "nameLocation": "226:6:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 718,
+                  "src": "211:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "bytes[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 714,
+                      "name": "bytes",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "211:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_storage_ptr",
+                        "typeString": "bytes"
+                      }
+                    },
+                    "id": 715,
+                    "nodeType": "ArrayTypeName",
+                    "src": "211:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes_storage_$dyn_storage_ptr",
+                      "typeString": "bytes[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "210:23:6"
+            },
+            "scope": 728,
+            "src": "148:86:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "14a6e293",
+            "id": 727,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setData",
+            "nameLocation": "249:7:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 725,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 721,
+                  "mutability": "mutable",
+                  "name": "keys",
+                  "nameLocation": "274:4:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 727,
+                  "src": "257:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 719,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "257:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 720,
+                    "nodeType": "ArrayTypeName",
+                    "src": "257:9:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 724,
+                  "mutability": "mutable",
+                  "name": "values",
+                  "nameLocation": "295:6:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 727,
+                  "src": "280:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "bytes[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 722,
+                      "name": "bytes",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "280:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_storage_ptr",
+                        "typeString": "bytes"
+                      }
+                    },
+                    "id": 723,
+                    "nodeType": "ArrayTypeName",
+                    "src": "280:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes_storage_$dyn_storage_ptr",
+                      "typeString": "bytes[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "256:46:6"
+            },
+            "returnParameters": {
+              "id": 726,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "311:0:6"
+            },
+            "scope": 728,
+            "src": "240:72:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 729,
+        "src": "60:255:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:282:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-02-08T06:59:22.145Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
